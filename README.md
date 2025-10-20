@@ -51,7 +51,7 @@ Each spreadsheet is pre-processed into **semantic records** that preserve its me
   {"id": "cost_analysis_annual_cost_column_rule", "name": "Annual Cost (Column Rule)", "sheet": "Cost Analysis", "type": "column_rule", "column": 3, 
   "formula_semantic": "cost_analysis_yearly = cost_analysis * 12", "column_name": "Annual Cost", "formula_pattern": "={B}*12",}
 
-    # Ragged on formula_semantic
+  // Ragged on formula_semantic
   ````
 - **Scale:** ~200–500 entries per spreadsheet.  
 - **Example queries:**  
