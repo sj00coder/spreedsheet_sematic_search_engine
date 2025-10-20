@@ -46,12 +46,14 @@ Each spreadsheet is pre-processed into **semantic records** that preserve its me
 - **Features:** Cross sheet relations, generic relation finder, have proper cell address  
 - **Structure:**  
   ```json
-  {"id": "financial_ratios_net_profit_growth", "name": "Net Profit Growth", "sheet": "Financial Ratios", "cell_address": "C9", "row": 8, "column": 3, "formula": "=('3-Year Forecast'!C10-'3-Year Forecast'!B10)/'3-Year Forecast'!B10", "formula_semantic": "=('3-Year Forecast'!net_profit_after_tax_year_2-'3-Year Forecast'!net_profit_after_tax_year_1)/'3-Year Forecast'!net_profit_after_tax_year_1"}
+  {"id": "financial_ratios_net_profit_growth", "name": "Net Profit Growth", "sheet": "Financial Ratios", "cell_address": "C9", "row": 8, "column": 3,
+  "formula": "=('3-Year Forecast'!C10-'3-Year Forecast'!B10)/'3-Year Forecast'!B10",
+  "formula_semantic": "=('3-Year Forecast'!net_profit_after_tax_year_2-'3-Year Forecast'!net_profit_after_tax_year_1)/'3-Year Forecast'!net_profit_after_tax_year_1"}
 
   {"id": "cost_analysis_annual_cost_column_rule", "name": "Annual Cost (Column Rule)", "sheet": "Cost Analysis", "type": "column_rule", "column": 3, 
   "formula_semantic": "cost_analysis_yearly = cost_analysis * 12", "column_name": "Annual Cost", "formula_pattern": "={B}*12",}
 
-  // Ragged on formula_semantic
+  "Ragged on formula_semantic"
   ````
 - **Scale:** ~200–500 entries per spreadsheet.  
 - **Example queries:**  
